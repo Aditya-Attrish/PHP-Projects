@@ -14,7 +14,7 @@ function generatePassword($length = 12) {
 }
 
 // Example usage:
-$num = random_int(7, 16);
+$num = random_int(8, 16);
 $generatedPassword = generatePassword($num);
 echo "Generated Password: " . $generatedPassword;
 echo "\n";
