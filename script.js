@@ -12,8 +12,8 @@ function showTask(title) {
         <span>${title}</span>
     </div>
     <div class="todo-btn">
-        <button id="" class="btn btn-del"><img src="./svg/delete.svg" alt=""></button>
-        <button id="" class="btn btn-up"><img src="./svg/update.svg" alt=""></button>
+        <button id="" class="btn btn-del"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+        <button id="" class="btn btn-up"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></button>
     </div>`
     todos_container.appendChild(todo_item);
 }
