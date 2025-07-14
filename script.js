@@ -19,7 +19,7 @@ function showTask(title) {
 }
 
 function getData() {
-    fetch('tasks_api.php')
+    fetch('api.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {
