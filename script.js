@@ -1,0 +1,34 @@
+const button = document.querySelector("button");
+const form = document.querySelector("form");
+
+function showTask(title) {
+    const todos_container = document.querySelector(".todos-container");
+    const todo_item = document.createElement("div");
+    todo_item.classList.add("todo-item");
+    todo_item.classList.add("d-flex");
+    todo_item.innerHTML = `
+    <div class="title-body">
+        <input type="checkbox" id="">
+        <span>${title}</span>
+    </div>
+    <div class="todo-btn">
+        <button id="" class="btn btn-del"><img src="./svg/delete.svg" alt=""></button>
+        <button id="" class="btn btn-up"><img src="./svg/update.svg" alt=""></button>
+    </div>`
+    todos_container.appendChild(todo_item);
+}
+//showTask();
+
+button.addEventListener("click", ()=>{
+    if(form.classList.contains !== "row"){
+        form.classList.add("row");
+    }
+});
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.classList.remove("row");
+    const inputId = document.getElementById("title");
+    showTask(inputId.value);
+    inputId.value = '';
+});

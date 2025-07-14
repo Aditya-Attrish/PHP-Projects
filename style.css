@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-white{
+    background-color: #fff;
+}
+
+.header{
+    background-color: rgb(70, 189, 169);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+form{
+    display: none;
+    position: absolute;
+    padding: 10px 15px;
+    gap: 10px;
+    top: 50%;
+    left: 40%;
+}
+
+input, select{
+    padding: 8px 5px;
+}
+
+.add-btn{
+    background-color: blueviolet;
+}
+
+.todos-container{
+    padding: 0 30px;
+}
+
+.todo-item{
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-del{
+    background-color: red;
+    padding: 7px 10px;
+}
+
+.btn-up{
+    padding: 7px 10px;
+    background-color: green;
+}
